@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
-
-body {
+* body {
   background-color: #8e44ad;
   color: #fff;
   font-family: "Roboto Mono", sans-serif;
@@ -15,20 +19,17 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
-.counter-container {
+* body .counter-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 30px 50px;
 }
-
-.counter {
+* body .counter-container .counter {
   font-size: 60px;
   margin-top: 10px;
 }
-
 @media (max-width: 580px) {
   body {
     flex-direction: column;
